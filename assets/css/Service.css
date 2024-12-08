@@ -1,0 +1,242 @@
+section, .section {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 70px 0;
+    scroll-margin-top: 112px;
+    overflow: clip;
+}
+
+.orbit {
+    position: relative;
+    width: 440px;
+    height: 440px;
+    border: 5px solid rgba(83, 14, 0, 0.142);
+    border-radius: 50%;
+    outline: 5px solid rgb(173, 0, 0);
+    background-image: url(../img/bg_hero_1.webp);
+    background-position: bottom;
+}
+
+/* Circle Elements */
+.circut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 185px;
+    top: 173px;
+    background: white;
+    border: 4px solid #650000;
+    border-radius: 50%;
+    display: none !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+    animation: orbitAnimation 10s linear infinite;
+}
+
+/* Orbiting Animation */
+@keyframes orbitAnimation {
+    0% {
+        transform: rotate(0deg) translateX(220px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) translateX(220px) rotate(-360deg);
+    }
+}
+
+/* Assign Animation Delays */
+#oil-gas {
+    animation-delay: 0s;
+    display: flex !important;
+}
+
+#contracting {
+    animation-delay: 1.6s;
+    display: flex !important;
+}
+
+#engineering {
+    animation-delay: 3.2s;
+    display: flex !important;
+}
+
+#building {
+    animation-delay: 4.8s;
+    display: flex !important;
+}
+
+#industrial {
+    animation-delay: 6.4s;
+    display: flex !important;
+}
+
+#others {
+    animation-delay: 8s;
+    display: flex !important;
+}
+
+
+.circut p{
+    font-size: 18px;
+    font-family: "Roboto",  sans-serif;
+}
+
+
+@media (max-width: 875px) {
+
+    .service-details-page ul{
+        margin-top: 20px;
+    }
+    .category-sec{
+        padding: 0 !important;
+    }
+}
+@media (max-width: 575px) {
+    .service-details-page ul{
+        margin-top: 20px;
+    }
+    .orbit {
+        position: relative;
+        width: 340px;
+        height: 340px;
+        border: 5px solid rgba(83, 14, 0, 0.142);
+        border-radius: 50%;
+        outline: 5px solid rgb(173, 0, 0);
+        background-image: url(../img/bg_hero_1.webp);
+        background-position: bottom;
+    }
+    .circle {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: 123px;
+        top: 123px;
+        background: white;
+        border: 4px solid #650000;
+        border-radius: 50%;
+        display: none !important;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        text-align: center;
+        animation: orbitAnimation 10s linear infinite;
+    }
+    @keyframes orbitAnimation {
+        0% {
+            transform: rotate(0deg) translateX(160px) rotate(0deg);
+        }
+    
+        100% {
+            transform: rotate(360deg) translateX(160px) rotate(-360deg);
+        }
+    }
+}
+@media (max-width: 414px) {
+    .orbit {
+        position: relative;
+        width: 320px;
+        height: 320px;
+    }
+    .circle {
+        width: 65px;
+        height: 65px;
+        left: 123px;
+        top: 123px;
+    }
+    @keyframes orbitAnimation {
+        0% {
+            transform: rotate(0deg) translateX(150px) rotate(0deg);
+        }
+    
+        100% {
+            transform: rotate(360deg) translateX(150px) rotate(-360deg);
+        }
+    }
+    .service-details ul li {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.category-sec .services-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-sec .category {
+    flex: 1 1 calc(25% - 20px); /* Responsive for up to 8 parts */
+    min-width: 200px;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-sec .category h3 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #830000 ;
+}
+
+.category-sec .category ul {
+    padding: 20px;
+    margin: 0;
+}
+
+.category-sec .category ul li {
+    padding: 8px 0;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: #720000d9;
+    font-weight: 500;
+}
+
+.category-sec .category ul li:last-child {
+    border-bottom: none;
+}
